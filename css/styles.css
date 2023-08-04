@@ -1,23 +1,81 @@
+/* BASE STYLES */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.section {
+
+}
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 :root {
-    --brand-color: #4D5AE5;
-    --pressed-color: #404BBF;
-    --heading-color: #2e2f42;
-    --text-color: #434455;
-    --primary-background: #FFFFFF;
-    --light-background: #F4F4FD;
-    --accent-color: #E7E9FC;
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --navyblue: #2e2f42;
+    --slate: #434455;
+    --white: #FFFFFF;
+    --cloud: #F4F4FD;
+    --cornflover: #E7E9FC;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    color: var(--text-color);
-    background-color: var(--primary-background);
+    color: var(--slate);
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none;
 }
 
 ol,
 ul {
     list-style-type: none;
 }
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER STYLES */
 
 .header {
     background-color: inherit;
@@ -31,23 +89,15 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--brand-color);
-}
-
-.link {
-    text-decoration: none;
+    color: var(--iris);
 }
 
 .accent-dark {
-    color: var(--heading-color);
-}
-
-.list {
-    list-style: none;
+    color: var(--navyblue);
 }
 
 .nav-link {
-    color: var(--heading-color);
+    color: var(--navyblue);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -56,11 +106,11 @@ ul {
 
 .nav-link:hover,
 .nav-link:active {
-    color: var(--pressed-color);
+    color: var(--ocean);
 }
 
 .nav-link:focus {
-    color: var(--pressed-color);
+    color: var(--ocean);
 }
 
 .address {
@@ -71,20 +121,22 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--slate);
 }
 
 .address-link:hover,
 .address-link:active {
-    color: var(--pressed-color);
+    color: var(--ocean);
 }
 
 .address-link:focus {
-    color: var(--pressed-color);
+    color: var(--ocean);
 }
 
+/* HERO STYLES */
+
 .hero-sect {
-    background-color: var(--heading-color);
+    background-color: var(--navyblue);
 }
 
 .title {
@@ -92,47 +144,51 @@ ul {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--primary-background);
+    color: var(--white);
 }
 
 .order-btn {
-    background-color: var(--brand-color);
+    background-color: var(--iris);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--primary-background);
+    color: var(--white);
     cursor: pointer;
 }
 
 .order-btn:hover,
 .order-btn:active {
-    background-color: var(--pressed-color);
+    background-color: var(--ocean);
 }
 
 .order-btn:focus {
-    background-color: var(--pressed-color);
+    background-color: var(--ocean);
 }
 
 .list {
     list-style: none;
 }
 
+/* BENEFITS STYLES */
+
 .third-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--heading-color);
+    color: var(--navyblue);
 }
 
 .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--slate);
 }
+
+/* FITCHES STYLES */
 
 .second-title {
     font-size: 36px;
@@ -140,7 +196,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--heading-color);
+    color: var(--navyblue);
     text-transform: capitalize;
 }
 
@@ -148,8 +204,10 @@ ul {
     list-style: none;
 }
 
+/* TEAM STYLES */
+
 .team {
-    background-color: var(--light-background);
+    background-color: var(--cloud);
 }
 
 .list {
@@ -157,32 +215,36 @@ ul {
 }
  
 .team-card {
-    background-color: var(--primary-background);
+    background-color: var(--white);
 }
 
+/* FOOTER STYLES */
+
 .footer {
-    background-color: var(--heading-color);
-    color: var(--accent-color);
+    background-color: var(--navyblue);
+    color: var(--cornflover);
 }
 
 .accent-ligth {
-    color: var(--light-background);
+    color: var(--cloud);
 }
 
 .footer-text {
-    color: var(--light-background);
+    color: var(--cloud);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* PORTFOLIO FILTERS STYLES */
 
 .list {
     list-style: none;
 }
 
 .filter-btn {
-color: var(--brand-color);
-background-color: var(--light-background);
+color: var(--iris);
+background-color: var(--cloud);
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 16px;
@@ -193,13 +255,13 @@ cursor: pointer;
 
 .filter-btn:hover,
 .filter-btn:active {
-    color: var(--primary-background);
-    background-color: var(--pressed-color);
+    color: var(--white);
+    background-color: var(--ocean);
 }
 
 .filter-btn:focus {
-    color: var(--primary-background);
-    background-color: var(--pressed-color);
+    color: var(--white);
+    background-color: var(--ocean);
 }
 
 .link {
@@ -211,12 +273,12 @@ cursor: pointer;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--heading-color);
+    color: var(--navyblue);
 }
 
 .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--slate);
 }
