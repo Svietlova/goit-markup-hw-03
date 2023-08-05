@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 .section {
-    padding-top: ;
-    padding-bottom: ;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 }
 .container {
@@ -24,6 +24,9 @@
     --white: #FFFFFF;
     --cloud: #F4F4FD;
     --cornflover: #E7E9FC;
+
+    --indent: 24px;
+    --items: 3;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -31,6 +34,7 @@ body {
     background-color: var(--white);
 }
 h1,h2,h3,h4,h5,h6,p {
+    display: block;
     margin: 0;
 }
 .visually-hidden {
@@ -123,6 +127,11 @@ img {
 
 /* HERO STYLES */
 .hero-sect {
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+.hero-container {
+    padding: 188px;
     background-color: var(--navyblue);
 }
 .title {
@@ -133,10 +142,9 @@ img {
     color: var(--white);
 
     display: block;
-    padding-top: 188px;
-    padding-bottom: 292px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    width: 496px;
+    margin-bottom: 32px;
 }
 .order-btn {
     background-color: var(--iris);
@@ -164,12 +172,23 @@ img {
 }
 
 /* BENEFITS STYLES */
+.benefits {
+
+}
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+.benefits-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
 .third-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue);
+    margin-bottom: 8px;
 }
 .text {
     font-size: 16px;
@@ -177,7 +196,9 @@ img {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-
+.card-label {
+    padding: 32px 50px;
+}
 /* FITCHES STYLES */
 .second-title {
     font-size: 36px;
@@ -187,26 +208,55 @@ img {
     letter-spacing: 0.02em;
     color: var(--navyblue);
     text-transform: capitalize;
+
+    width: 323px;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 .list {
     list-style: none;
 }
-
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--indent);
+    row-gap: 48px;
+}
+.card-set-item {
+    flex-basis: calc((100% - var(--indent) * (var(--items - 1))) / var(--items));
+}
 /* TEAM STYLES */
 .team {
+    padding-bottom: 0;
+}
+.team-container{
     background-color: var(--cloud);
+    padding-bottom: 120px;
+    padding-top: 60px;
 }
 .list {
     list-style: none;
 }
+.card-set-team {
+    flex-basis: calc((100% - var(--indent) * 3) / 4);
+}
+
 .team-card {
     background-color: var(--white);
+    border: 1px solid var(--cornflover);
+    border-top: none;
 }
 
 /* FOOTER STYLES */
 .footer {
-    background-color: var(--navyblue);
     color: var(--cornflover);
+    background-color: var(--navyblue);
+}
+.footer-container {
+    width: 264px;
+    height: 312px;
+    padding-top: 100px;
+    padding-left: 15px;
 }
 .accent-ligth {
     color: var(--cloud);
@@ -219,6 +269,9 @@ img {
 }
 
 /* PORTFOLIO FILTERS STYLES */
+.filter-sect {
+    padding-bottom: 0;
+}
 .list {
     list-style: none;
 }
