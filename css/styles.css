@@ -196,9 +196,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-.card-label {
-    padding: 32px 50px;
-}
+
 /* FITCHES STYLES */
 .second-title {
     font-size: 36px;
@@ -209,7 +207,7 @@ img {
     color: var(--navyblue);
     text-transform: capitalize;
 
-    width: 323px;
+    width: 325px;
     margin: 0 auto;
     margin-bottom: 72px;
 }
@@ -245,6 +243,12 @@ img {
     background-color: var(--white);
     border: 1px solid var(--cornflover);
     border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.card-label {
+    padding: 32px 16px;
 }
 
 /* FOOTER STYLES */
@@ -296,6 +300,20 @@ cursor: pointer;
 }
 .link {
     text-decoration: none;
+}
+.serv-card {
+    border: 1px solid var(--cornflover);
+    border-top: none;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--indent);
+    row-gap: 48px;
+}
+
+.card-set-item {
+    flex-basis: calc((100% - 48px) / 3);
 }
 .third-title {
     font-weight: 500;
