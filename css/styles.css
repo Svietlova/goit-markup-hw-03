@@ -74,7 +74,6 @@ img {
 /* HEADER STYLES */
 .header {
     background-color: inherit;
-
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -84,12 +83,26 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
+
+    display: flex;
+    align-items: center;
+    margin-right: 76px;
 }
 .accent-dark {
     color: var(--navyblue);
 }
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cornflover);
+}
+.header-nav {
+    display: flex;
+}
 .nav-list {
     display: flex;
+    gap: 40px;
+    align-items: center;
 }
 .nav-link {
     color: var(--navyblue);
@@ -110,9 +123,18 @@ img {
 }
 .address {
     font-style: normal;
+    display: flex;
+}
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 .address-link {
+    display: flex;
+    height: 72px;
     font-size: 16px;
+    align-items: center;
+
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
@@ -156,9 +178,12 @@ img {
     color: var(--white);
     cursor: pointer;
 
-    display: inline-block;
+    display: flex;
     margin: 0 auto;
     border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
 }
 .order-btn:hover,
 .order-btn:active {
@@ -257,24 +282,35 @@ img {
     background-color: var(--navyblue);
 }
 .footer-container {
+    display: block
     width: 264px;
     height: 312px;
     padding-top: 100px;
     padding-left: 15px;
 }
+
 .accent-ligth {
     color: var(--cloud);
+}
+.foot-logo {
+    margin-bottom: 16px;
 }
 .footer-text {
     color: var(--cloud);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
 
 /* PORTFOLIO FILTERS STYLES */
 .filter-sect {
     padding-bottom: 0;
+}
+.filter-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 .list {
     list-style: none;
@@ -288,6 +324,10 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 cursor: pointer;
+
+border-radius: 4px;
+border: 1px solid var(--cornflover);
+padding: 12px 24px;
 }
 .filter-btn:hover,
 .filter-btn:active {
