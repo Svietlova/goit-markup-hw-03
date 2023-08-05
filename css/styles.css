@@ -1,12 +1,12 @@
 /* BASE STYLES */
-
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
 .section {
+    padding-top: ;
+    padding-bottom: ;
 
 }
 .container {
@@ -16,7 +16,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
 :root {
     --iris: #4D5AE5;
     --ocean: #404BBF;
@@ -26,17 +25,14 @@
     --cloud: #F4F4FD;
     --cornflover: #E7E9FC;
 }
-
 body {
     font-family: "Roboto", sans-serif;
     color: var(--slate);
     background-color: var(--white);
 }
-
-h1, h2, h3, h4, h5, h6, p {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -49,26 +45,22 @@ h1, h2, h3, h4, h5, h6, p {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 .link {
     text-decoration: none;
 }
-
 ol,
 ul {
     list-style-type: none;
 }
-
 .list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 button {
+    font-family: inherit;
     cursor: pointer;
 }
-
 img {
     display: block;
     max-width: 100%;
@@ -76,12 +68,10 @@ img {
 }
 
 /* HEADER STYLES */
-
 .header {
     background-color: inherit;
 
 }
-
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -91,62 +81,63 @@ img {
     text-transform: uppercase;
     color: var(--iris);
 }
-
 .accent-dark {
     color: var(--navyblue);
 }
-
+.nav-list {
+    display: flex;
+}
 .nav-link {
     color: var(--navyblue);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
 
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .nav-link:hover,
 .nav-link:active {
     color: var(--ocean);
 }
-
 .nav-link:focus {
     color: var(--ocean);
 }
-
 .address {
     font-style: normal;
 }
-
 .address-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-
 .address-link:hover,
 .address-link:active {
     color: var(--ocean);
 }
-
 .address-link:focus {
     color: var(--ocean);
 }
 
 /* HERO STYLES */
-
 .hero-sect {
     background-color: var(--navyblue);
 }
-
 .title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white);
-}
 
+    display: block;
+    padding-top: 188px;
+    padding-bottom: 292px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
 .order-btn {
     background-color: var(--iris);
     font-family: "Roboto", sans-serif;
@@ -156,23 +147,23 @@ img {
     letter-spacing: 0.04em;
     color: var(--white);
     cursor: pointer;
-}
 
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
 .order-btn:hover,
 .order-btn:active {
     background-color: var(--ocean);
 }
-
 .order-btn:focus {
     background-color: var(--ocean);
 }
-
 .list {
     list-style: none;
 }
 
 /* BENEFITS STYLES */
-
 .third-title {
     font-weight: 500;
     font-size: 20px;
@@ -180,7 +171,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--navyblue);
 }
-
 .text {
     font-size: 16px;
     line-height: 1.5;
@@ -189,7 +179,6 @@ img {
 }
 
 /* FITCHES STYLES */
-
 .second-title {
     font-size: 36px;
     line-height: 1.11;
@@ -199,36 +188,29 @@ img {
     color: var(--navyblue);
     text-transform: capitalize;
 }
-
 .list {
     list-style: none;
 }
 
 /* TEAM STYLES */
-
 .team {
     background-color: var(--cloud);
 }
-
 .list {
     list-style: none;
 }
- 
 .team-card {
     background-color: var(--white);
 }
 
 /* FOOTER STYLES */
-
 .footer {
     background-color: var(--navyblue);
     color: var(--cornflover);
 }
-
 .accent-ligth {
     color: var(--cloud);
 }
-
 .footer-text {
     color: var(--cloud);
     font-size: 16px;
@@ -237,11 +219,9 @@ img {
 }
 
 /* PORTFOLIO FILTERS STYLES */
-
 .list {
     list-style: none;
 }
-
 .filter-btn {
 color: var(--iris);
 background-color: var(--cloud);
@@ -252,22 +232,18 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 cursor: pointer;
 }
-
 .filter-btn:hover,
 .filter-btn:active {
     color: var(--white);
     background-color: var(--ocean);
 }
-
 .filter-btn:focus {
     color: var(--white);
     background-color: var(--ocean);
 }
-
 .link {
     text-decoration: none;
 }
-
 .third-title {
     font-weight: 500;
     font-size: 20px;
@@ -275,7 +251,6 @@ cursor: pointer;
     letter-spacing: 0.02em;
     color: var(--navyblue);
 }
-
 .text {
     font-size: 16px;
     line-height: 1.5;
