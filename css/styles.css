@@ -280,7 +280,6 @@ img {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .card-label {
-    /* padding: 32px 16px; */
     padding: 32px 0;
 }
 
@@ -312,12 +311,14 @@ img {
 
 /* PORTFOLIO FILTERS STYLES */
 .filter-sect {
-    padding-bottom: 0;
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .filter-list {
     display: flex;
     gap: 24px;
     justify-content: center;
+    margin-bottom: 72px
 }
 .list {
     list-style: none;
@@ -340,37 +341,39 @@ padding: 12px 24px;
 .filter-btn:active {
     color: var(--white);
     background-color: var(--ocean);
+    border: 1px solid transparent;
 }
 .filter-btn:focus {
     color: var(--white);
     background-color: var(--ocean);
+    border: 1px solid transparent;
 }
 .link {
     text-decoration: none;
 }
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
 .serv-card {
+    flex-basis: calc((100% - 48px) / 3);
+}
+.card-label-port {
+    padding: 32px 16px;
     border: 1px solid var(--cornflover);
     border-top: none;
 }
-.card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-.card-list {
-    row-gap: 48px;
-}
-.card-set-item {
-    flex-basis: calc((100% - 48px) / 3);
-}
-.third-title {
+.third-title-port {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue);
+    margin-bottom: 8px;
 }
-.text {
+.text-port {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
