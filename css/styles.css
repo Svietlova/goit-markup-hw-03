@@ -252,10 +252,7 @@ img {
 /* TEAM STYLES */
 .team {
     background-color: var(--cloud);
-    padding-bottom: 120px;
-}
-.team-container {
-    padding-top: 60px;
+    padding: 120px 0;
 }
 .list {
     list-style: none;
@@ -266,7 +263,6 @@ img {
 .team-list {
     display: flex;
     gap: 24px;
-    
 }
 .team-card {
     background-color: var(--white);
