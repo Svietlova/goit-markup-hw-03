@@ -246,16 +246,15 @@ img {
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    column-gap: var(--indent);
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 24px;
 }
 .card-set-item {
-    flex-basis: calc((100% - var(--indent) * (var(--items - 1))) / var(--items));
+    flex-basis: calc((100% - (24px * 2)) / 3);
 }
 /* TEAM STYLES */
 .team {
-    padding-top: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--cloud);
 }
 .team-container {
@@ -356,10 +355,11 @@ padding: 12px 24px;
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    column-gap: var(--indent);
+    gap: 24px;
+}
+.card-list {
     row-gap: 48px;
 }
-
 .card-set-item {
     flex-basis: calc((100% - 48px) / 3);
 }
